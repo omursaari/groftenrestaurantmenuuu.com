@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Groften Dijital Menü</title>
+  <link rel="stylesheet" href="groften.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Playfair+Display:wght@700;900&family=Raleway:wght@400;700;900&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+ <header style="background-color: rgb(110, 7, 7);" class="header">
+  <div class="brand-wrapper">
+    <div class="crown-container">
+      <i class="fas fa-crown crown-icon"></i>
+      <div class="crown-glow"></div>
+    </div>
+    <!-- Yeni Başlık Yapısı -->
+    <h1  class="restaurant-title">GROFTEN</h1>
+    <div class="sub-title">RESTAURANT CAFE & BAR</div>
+  </div>
+  
+  <!-- Bayrak butonların (yuvarlak olanlar) burada kalmaya devam ediyor -->
+  <div class="language-selector">
+  <button class="lang-button active" data-lang="tr">
+    <img src="https://flagcdn.com/w40/tr.png" alt="Türkçe" class="flag-img">
+  </button>
+  <button class="lang-button" data-lang="en">
+    <img src="https://flagcdn.com/w40/gb.png" alt="English" class="flag-img">
+  </button>
+  <button class="lang-button" data-lang="ru">
+    <img src="https://flagcdn.com/w40/ru.png" alt="Русский" class="flag-img">
+  </button>
+</div>
+</header>
+
+  <main class="menu-container">
+    <section style="background-color: rgba(160, 178, 190, 0.13);"class="welcome-section">
+      <h2 data-tr="Hoş Geldiniz" data-en="Welcome" data-ru="Добро пожаловать">Hoş Geldiniz</h2>
+      <p data-tr="Groften'in eşsiz lezzetlerini keşfedin." data-en="Discover the unique tastes of Groften." data-ru="Откройте для себя уникальные вкусы Groften.">Groften'in eşsiz lezzetlerini keşfedin.</p>
+    </section>
+
+   <div class="category-scroll" id="categoryBar" style="background-color: rgba(160, 178, 190, 0.13);">
+  <button class="category-button active" data-category="breakfast" data-tr="KAHVALTILAR" data-en="BREAKFASTS" data-ru="ЗАВТРАКИ">KAHVALTILAR</button>
+  <button class="category-button" data-category="starters" data-tr="BAŞLANGIÇLAR" data-en="STARTERS" data-ru="ЗАКУСКИ">BAŞLANGIÇLAR</button>
+  <button class="category-button" data-category="burgers" data-tr="SANDVIÇ & BURGERLER" data-en="SANDWICHES & BURGERS" data-ru="БУТЕРБРОДЫ И БУРГЕРЫ">SANDVIÇ & BURGERLER</button>
+  <button class="category-button" data-category="main-dishes" data-tr="ANA YEMEKLER" data-en="MAIN DISHES" data-ru="ОСНОВНЫЕ БЛЮДА">ANA YEMEKLER</button>
+  <button class="category-button" data-category="pasta" data-tr="MAKARNALAR" data-en="PASTA" data-ru="ПАСТА">MAKARNALAR</button>
+  <button class="category-button" data-category="pizzas" data-tr="PİZZALAR" data-en="PIZZAS" data-ru="ПИЦЦЫ">PİZZALAR</button>
+  <button class="category-button" data-category="seafood" data-tr="DENİZ ÜRÜNLERİ" data-en="SEAFOOD" data-ru="МОРЕПРОДУКТЫ">DENİZ ÜRÜNLERİ</button>
+  <button class="category-button" data-category="desserts" data-tr="TATLILAR" data-en="DESSERTS" data-ru="ДЕСЕРТЫ">TATLILAR</button>
+  <button class="category-button" data-category="frozen-drinks" data-tr="BUZLU İÇECEKLER" data-en="FROZEN DRINKS" data-ru="ЗАМОРОЖЕННЫЕ НАПИТКИ">BUZLU İÇECEKLER</button>
+  <button class="category-button" data-category="soft-drinks" data-tr="MEŞRUBATLAR" data-en="SOFT DRINKS" data-ru="БЕЗАЛКОГОЛЬНЫЕ НАПИТКИ">MEŞRUBATLAR</button>
+  <button class="category-button" data-category="beer" data-tr="BİRA" data-en="BEER" data-ru="ПИВО">BİRA</button>
+  <button class="category-button" data-category="whiskeys" data-tr="VİSKİ" data-en="WHISKEYS" data-ru="ВИСКИ">VİSKİ</button>
+  <button class="category-button" data-category="shots" data-tr="SHOTLAR" data-en="SHOTS" data-ru="ШОТЫ">SHOT</button>
+  <!-- <button class="category-button" data-category="water-pipe" data-tr="nargıle" data-en="WATER PIPE" data-ru="КАЛЬЯН">NARGİLE</button> -->
+  <button class="category-button" data-category="milkshakes" data-tr="MİLKSHAKELER" data-en="MILKSHAKES" data-ru="МОЛОЧНЫЕ КОКТЕЙЛИ">MİLKSHAKELER</button>
+  <button class="category-button" data-category="sexycocktails" data-tr="SEXY KOKTEYLLER" data-en="SEXY COCKTAILS" data-ru="СЕКСУАЛЬНЫЕ КОКТЕЙЛИ">SEXY KOKTEYLLER</button>
+  <button class="category-button" data-category="cocktails" data-tr="KOKTEYLLER" data-en="COCKTAILS" data-ru="КОКТЕЙЛИ">KOKTEYLLER</button>
+</div>
+
+    <section style="background-color: rgba(160, 178, 190, 0.13);" class="menu-content">
+      <div id="menu-items-display" class="menu-items"></div>
+    </section>
+  </main>
+
+ <!-- Mevcut mobile-nav kısmını bununla değiştir -->
+<nav class="mobile-nav">
+  <div class="nav-item active" onclick="document.getElementById('categoryBar').scrollIntoView({behavior: 'smooth'})">
+    <div class="menu-icon-circle">🍴</div>
+    <p data-tr="MENÜ" data-en="MENU" data-ru="МЕНЮ">MENÜ</p>
+  </div>
+</nav>
+  <script src="groften_new.js"></script>
+</body>
+</html>

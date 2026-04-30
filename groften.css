@@ -1,0 +1,296 @@
+
+/* Font İçeri Aktarımları */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Montserrat:wght@300;900&family=Playfair+Display:ital,wght@0,900;1,900&display=swap');
+
+/* Temel Ayarlar */
+:root {
+  --primary: #6e0707;
+  --bg: #f8f6f2;
+  --white: #ffffff;
+  --text: #1a1a1a;
+  --gray: #888;
+  --radius: 24px;
+}
+
+
+
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  padding-bottom: 80px;
+}
+
+/* Header Stileri */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+   position: relative;
+  background: url('WhatsApp\ Image\ 2026-04-30\ at\ 19.59.08.jpeg') no-repeat center center/cover;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* buradan karanlık ayarı */
+  z-index: 1;
+}
+
+/* header içindeki yazılar */
+header * {
+  position: relative;
+  z-index: 2;
+}
+
+.brand-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0 10px;
+}
+
+.restaurant-title {
+ font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  size:300px;
+  letter-spacing: 6px !important;
+  color: white;
+  margin: 0;
+  text-shadow: 2px 4px 10px rgba(0,0,0,0.5);
+}
+
+
+
+
+
+
+.sub-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 300;
+  letter-spacing: 5px;
+  color: #FFD700;
+  margin-top: 8px;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.crown-icon {
+  color: #d4af37;
+  font-size: 1.5rem;
+  filter: drop-shadow(0 2px 5px rgba(0,0,0,0.3));
+  margin-bottom: -5px;
+  animation: crownFloat 3s ease-in-out infinite;
+}
+
+@keyframes crownFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-5px) rotate(5deg); }
+}
+
+/* Dil Seçici Butonlar */
+.language-selector {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.lang-button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  padding: 0;
+  overflow: hidden;
+}
+
+.flag-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+}
+
+.lang-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+  border-color: rgba(49, 6, 6, 0.5);
+}
+
+.lang-button.active {
+  background: rgb(88, 11, 11);
+  border-color: #420707;
+  box-shadow: 0 0 15px rgba(71, 12, 12, 0.4);
+  transform: scale(1.1);
+}
+
+.lang-button:active {
+  transform: scale(0.9);
+}
+
+/* Hoşgeldiniz Bölümü */
+.welcome-section {
+  padding: 25px 20px 10px;
+}
+
+.welcome-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin: 0;
+}
+
+.welcome-section p {
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+/* Kategori Butonları */
+.category-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 15px 20px;
+  scrollbar-width: none;
+}
+
+.category-scroll::-webkit-scrollbar { 
+  display: none; 
+}
+
+.category-button {
+  flex: 0 0 auto;
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(110, 7, 7);
+  color: white;
+  font-weight: 700;
+  font-size: 0.85rem;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(110, 7, 7, 0.2);
+}
+
+.category-button.active {
+  background-color: rgb(54, 3, 3);
+  color: #ffffff;
+  transform: scale(1.05);
+  filter: brightness(1.2);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Menü Öğeleri */
+.menu-container {
+  padding-bottom: 100px;
+}
+
+.menu-item {
+  background: white;
+  margin: 0 15px 15px;
+  padding: 20px;
+  border-radius: var(--radius);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.04);
+  border-left: 5px solid var(--primary);
+  opacity: 0;
+  transform: translateY(15px);
+  transition: all 0.4s ease;
+}
+
+.item-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  margin: 0 0 5px;
+}
+
+.item-description {
+  font-size: 0.8rem;
+  color: var(--gray);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.item-price {
+  background: var(--primary);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+/* Alt Navigasyon */
+.mobile-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(to top, rgba(255,255,255,1) 70%, rgba(255,255,255,0));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  pointer-events: none;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.nav-item {
+  pointer-events: auto;
+  background: var(--primary);
+  color: white;
+  padding: 10px 35px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 10px 25px rgba(110, 7, 7, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.nav-item:active {
+  transform: scale(0.9);
+}
+
+.menu-icon-circle {
+  font-size: 1.2rem;
+}
+
+.nav-item p {
+  font-size: 0.9rem;
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
