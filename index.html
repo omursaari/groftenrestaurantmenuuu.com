@@ -23,48 +23,83 @@
       <div class="crown-glow"></div>
     </div>
     <!-- Yeni Başlık Yapısı -->
-    <h1  class="restaurant-title">GROFTEN</h1>
+    <h1  class="restaurant-title">GRØFTEN</h1>
     <div class="sub-title">RESTAURANT CAFE & BAR</div>
   </div>
   
-  <!-- Bayrak butonların (yuvarlak olanlar) burada kalmaya devam ediyor -->
   <div class="language-selector">
-  <button class="lang-button active" data-lang="tr">
-    <img src="https://flagcdn.com/w40/tr.png" alt="Türkçe" class="flag-img">
-  </button>
-  <button class="lang-button" data-lang="en">
-    <img src="https://flagcdn.com/w40/gb.png" alt="English" class="flag-img">
-  </button>
-  <button class="lang-button" data-lang="ru">
-    <img src="https://flagcdn.com/w40/ru.png" alt="Русский" class="flag-img">
-  </button>
-</div>
+    <div class="language-dropdown custom" id="language-dropdown">
+      <button type="button" class="language-selected" id="language-selected" aria-haspopup="listbox" aria-expanded="false">
+        <img class="flag-img selected-flag" src="https://flagcdn.com/w20/tr.png" alt="Türkçe">
+        <span class="selected-language">Türkçe</span>
+        <span class="dropdown-arrow">▾</span>
+      </button>
+      <ul class="language-options" id="language-options" role="listbox" tabindex="-1">
+        <li class="language-option active" data-lang="tr" data-label="Türkçe" role="option">
+          <img class="flag-img" src="https://flagcdn.com/w20/tr.png" alt="">
+          Türkçe
+        </li>
+        <li class="language-option" data-lang="en" data-label="English" role="option">
+          <img class="flag-img" src="https://flagcdn.com/w20/gb.png" alt="">
+          English
+        </li>
+        <li class="language-option" data-lang="ru" data-label="Русский" role="option">
+          <img class="flag-img" src="https://flagcdn.com/w20/ru.png" alt="">
+          Русский
+        </li>
+        <li class="language-option" data-lang="dk" data-label="Dansk" role="option">
+          <img class="flag-img" src="https://flagcdn.com/w20/dk.png" alt="">
+          Dansk
+        </li>
+        <li class="language-option" data-lang="fi" data-label="Suomi" role="option">
+          <img class="flag-img" src="https://flagcdn.com/w20/fi.png" alt="">
+          Suomi
+        </li>
+        <li class="language-option" data-lang="se" data-label="Svenska" role="option">
+          <img class="flag-img" src="https://flagcdn.com/w20/se.png" alt="">
+          Svenska
+        </li>
+        <li class="language-option" data-lang="no" data-label="Norsk" role="option">
+          <img class="flag-img" src="https://flagcdn.com/w20/no.png" alt="">
+          Norsk
+        </li>
+        <li class="language-option" data-lang="nl" data-label="Nederlands" role="option">
+          <img class="flag-img" src="https://flagcdn.com/w20/nl.png" alt="">
+          Nederlands
+        </li>
+        <li class="language-option" data-lang="de" data-label="Deutsch" role="option">
+          <img class="flag-img" src="https://flagcdn.com/w20/de.png" alt="">
+          Deutsch
+        </li>
+      </ul>
+    </div>
+  </div>
 </header>
 
   <main class="menu-container">
     <section style="background-color: rgba(160, 178, 190, 0.13);"class="welcome-section">
-      <h2 data-tr="Hoş Geldiniz" data-en="Welcome" data-ru="Добро пожаловать">Hoş Geldiniz</h2>
-      <p data-tr="Groften'in eşsiz lezzetlerini keşfedin." data-en="Discover the unique tastes of Groften." data-ru="Откройте для себя уникальные вкусы Groften.">Groften'in eşsiz lezzetlerini keşfedin.</p>
+      <h2 style="font-size: 33px;" data-tr="Hoş Geldiniz" data-en="Welcome" data-ru="Добро пожаловать" data-dk="Velkommen" data-fi="Tervetuloa" data-se="Välkommen" data-no="Velkommen" data-nl="Welkom" data-de="Willkommen">Hoş Geldiniz</h2>
+      <p style="font-size: 17px;"  data-tr="Groften'in eşsiz lezzetlerini keşfedin." data-en="Discover the unique tastes of Groften." data-ru="Откройте для себя уникальные вкусы Groften." data-dk="Opdag Groftens unikke smage." data-fi="Tutustu Groftens ainutlaatuisiin makuihin." data-se="Upptäck Groftens unika smaker." data-no="Oppdag Groftens unike smaker." data-nl="Ontdek de unieke smaken van Groften." data-de="Entdecken Sie die einzigartigen Geschmäcker von Groften.">Groften'in eşsiz lezzetlerini keşfedin.</p>
     </section>
 
    <div class="category-scroll" id="categoryBar" style="background-color: rgba(160, 178, 190, 0.13);">
-  <button class="category-button active" data-category="breakfast" data-tr="KAHVALTILAR" data-en="BREAKFASTS" data-ru="ЗАВТРАКИ">KAHVALTILAR</button>
-  <button class="category-button" data-category="starters" data-tr="BAŞLANGIÇLAR" data-en="STARTERS" data-ru="ЗАКУСКИ">BAŞLANGIÇLAR</button>
-  <button class="category-button" data-category="burgers" data-tr="SANDVIÇ & BURGERLER" data-en="SANDWICHES & BURGERS" data-ru="БУТЕРБРОДЫ И БУРГЕРЫ">SANDVIÇ & BURGERLER</button>
-  <button class="category-button" data-category="main-dishes" data-tr="ANA YEMEKLER" data-en="MAIN DISHES" data-ru="ОСНОВНЫЕ БЛЮДА">ANA YEMEKLER</button>
-  <button class="category-button" data-category="pasta" data-tr="MAKARNALAR" data-en="PASTA" data-ru="ПАСТА">MAKARNALAR</button>
-  <button class="category-button" data-category="pizzas" data-tr="PİZZALAR" data-en="PIZZAS" data-ru="ПИЦЦЫ">PİZZALAR</button>
-  <button class="category-button" data-category="seafood" data-tr="DENİZ ÜRÜNLERİ" data-en="SEAFOOD" data-ru="МОРЕПРОДУКТЫ">DENİZ ÜRÜNLERİ</button>
-  <button class="category-button" data-category="desserts" data-tr="TATLILAR" data-en="DESSERTS" data-ru="ДЕСЕРТЫ">TATLILAR</button>
-  <button class="category-button" data-category="frozen-drinks" data-tr="BUZLU İÇECEKLER" data-en="FROZEN DRINKS" data-ru="ЗАМОРОЖЕННЫЕ НАПИТКИ">BUZLU İÇECEKLER</button>
-  <button class="category-button" data-category="soft-drinks" data-tr="MEŞRUBATLAR" data-en="SOFT DRINKS" data-ru="БЕЗАЛКОГОЛЬНЫЕ НАПИТКИ">MEŞRUBATLAR</button>
-  <button class="category-button" data-category="beer" data-tr="BİRA" data-en="BEER" data-ru="ПИВО">BİRA</button>
-  <button class="category-button" data-category="whiskeys" data-tr="VİSKİ" data-en="WHISKEYS" data-ru="ВИСКИ">VİSKİ</button>
-  <button class="category-button" data-category="shots" data-tr="SHOTLAR" data-en="SHOTS" data-ru="ШОТЫ">SHOT</button>
+  <button class="category-button active" data-category="breakfast" data-tr="KAHVALTILAR" data-en="BREAKFASTS" data-ru="ЗАВТРАКИ" data-dk="MORGENSMADE" data-fi="AAMIAISET" data-se="FRUKOSTAR" data-no="FROKOSTER" data-nl="ONTBIJTEN" data-de="FRÜHSTÜCKE">KAHVALTILAR</button>
+  <button class="category-button" data-category="starters" data-tr="BAŞLANGIÇLAR" data-en="STARTERS" data-ru="ЗАКУСКИ" data-dk="FORRETTER" data-fi="ALKURUOAT" data-se="FÖRRÄTTER" data-no="FORRETTER" data-nl="VOORGERECHTEN" data-de="VORSPEISEN">BAŞLANGIÇLAR</button>
+  <button class="category-button" data-category="burgers" data-tr="SANDVIÇ & BURGERLER" data-en="SANDWICHES & BURGERS" data-ru="БУТЕРБРОДЫ И БУРГЕРЫ" data-dk="SANDWICHES & BURGERE" data-fi="VOILEIVÄT & BURGERIT" data-se="SANDWICHAR & BURGARE" data-no="SANDWICHES & BURGERE" data-nl="SANDWICHES & BURGERS" data-de="SANDWICHES & BURGER">SANDVIÇ & BURGERLER</button>
+  <button class="category-button" data-category="main-dishes" data-tr="ANA YEMEKLER" data-en="MAIN DISHES" data-ru="ОСНОВНЫЕ БЛЮДА" data-dk="HOVEDRETTER" data-fi="PÄÄRUOAT" data-se="HUVUDRÄTTER" data-no="HOVEDRETTER" data-nl="HOOFDSCHOTELS" data-de="HAUPTGERICHTE">ANA YEMEKLER</button>
+  <button class="category-button" data-category="pasta" data-tr="MAKARNALAR" data-en="PASTA" data-ru="ПАСТА" data-dk="PASTA" data-fi="PASTA" data-se="PASTA" data-no="PASTA" data-nl="PASTA" data-de="PASTA">MAKARNALAR</button>
+  <button class="category-button" data-category="pizzas" data-tr="PİZZALAR" data-en="PIZZAS" data-ru="ПИЦЦЫ" data-dk="PIZZAER" data-fi="PIZZAT" data-se="PIZZOR" data-no="PIZZAER" data-nl="PIZZA'S" data-de="PIZZEN">PİZZALAR</button>
+  <button class="category-button" data-category="seafood" data-tr="DENİZ ÜRÜNLERİ" data-en="SEAFOOD" data-ru="МОРЕПРОДУКТЫ" data-dk="FISKERETTER" data-fi="MERENELÄVÄTUOTTEET" data-se="SJÖMAT" data-no="SJØMAT" data-nl="ZEEVRUCHTEN" data-de="MEERESFRÜCHTE">DENİZ ÜRÜNLERİ</button>
+  <button class="category-button" data-category="desserts" data-tr="TATLILAR" data-en="DESSERTS" data-ru="ДЕСЕРТЫ" data-dk="DESSERTER" data-fi="JÄLKIRUOAT" data-se="EFTERRÄTTER" data-no="DESSERTER" data-nl="DESSERTS" data-de="NACHSPEISEN">TATLILAR</button>
+  <button class="category-button" data-category="frozen-drinks" data-tr="BUZLU İÇECEKLER" data-en="FROZEN DRINKS" data-ru="ЗАМОРОЖЕННЫЕ НАПИТКИ" data-dk="ISDRINKS" data-fi="JÄÄJUOMAT" data-se="FRUSNA DRYCKER" data-no="ISDRINKER" data-nl="GEVROREN DRANKEN" data-de="GEFRORENE GETRÄNKE">BUZLU İÇECEKLER</button>
+  <button class="category-button" data-category="soft-drinks" data-tr="MEŞRUBATLAR" data-en="SOFT DRINKS" data-ru="БЕЗАЛКОГОЛЬНЫЕ НАПИТКИ" data-dk="LÆSKEDRIKKE" data-fi="ALKOHOLITTOMAT JUOMAT" data-se="LÄSKDRYCKER" data-no="BRUS" data-nl="FRISDRANKEN" data-de="ALKOHOLFREIE GETRÄNKE">MEŞRUBATLAR</button>
+  <button class="category-button" data-category="beer" data-tr="BİRA" data-en="BEER" data-ru="ПИВО" data-dk="ØL" data-fi="OLUT" data-se="ÖL" data-no="ØL" data-nl="BIER" data-de="BIER">BİRA</button>
+  <button class="category-button" data-category="whiskeys" data-tr="VİSKİ" data-en="WHISKEYS" data-ru="ВИСКИ" data-dk="WHISKY" data-fi="VISKI" data-se="WHISKY" data-no="WHISKY" data-nl="WHISKY" data-de="WHISKY">VİSKİ</button>
+  <button class="category-button" data-category="shots" data-tr="SHOTLAR" data-en="SHOTS" data-ru="ШОТЫ" data-dk="SHOTS" data-fi="SHOTIT" data-se="SHOTS" data-no="SHOTS" data-nl="SHOTS" data-de="SHOTS">SHOT</button>
   <!-- <button class="category-button" data-category="water-pipe" data-tr="nargıle" data-en="WATER PIPE" data-ru="КАЛЬЯН">NARGİLE</button> -->
-  <button class="category-button" data-category="milkshakes" data-tr="MİLKSHAKELER" data-en="MILKSHAKES" data-ru="МОЛОЧНЫЕ КОКТЕЙЛИ">MİLKSHAKELER</button>
-  <button class="category-button" data-category="sexycocktails" data-tr="SEXY KOKTEYLLER" data-en="SEXY COCKTAILS" data-ru="СЕКСУАЛЬНЫЕ КОКТЕЙЛИ">SEXY KOKTEYLLER</button>
-  <button class="category-button" data-category="cocktails" data-tr="KOKTEYLLER" data-en="COCKTAILS" data-ru="КОКТЕЙЛИ">KOKTEYLLER</button>
+  <button class="category-button" data-category="milkshakes" data-tr="MİLKSHAKELER" data-en="MILKSHAKES" data-ru="МОЛОЧНЫЕ КОКТЕЙЛИ" data-dk="MILKSHAKES" data-fi="MILKSHAKIT" data-se="MILKSHAKES" data-no="MILKSHAKES" data-nl="MILKSHAKES" data-de="MILKSHAKES">MİLKSHAKELER</button>
+  <button class="category-button" data-category="sexycocktails" data-tr="SEXY KOKTEYLLER" data-en="SEXY COCKTAILS" data-ru="СЕКСУАЛЬНЫЕ КОКТЕЙЛИ" data-dk="SEXY COCKTAILS" data-fi="SEXY COCKTAILS" data-se="SEXY COCKTAILS" data-no="SEXY COCKTAILS" data-nl="SEXY COCKTAILS" data-de="SEXY COCKTAILS">SEXY KOKTEYLLER</button>
+  <button class="category-button" data-category="cocktails" data-tr="KOKTEYLLER" data-en="COCKTAILS" data-ru="КОКТЕЙЛИ" data-dk="COCKTAILS" data-fi="COCKTAILS" data-se="COCKTAILS" data-no="COCKTAILS" data-nl="COCKTAILS" data-de="COCKTAILS">KOKTEYLLER</button>
 </div>
 
     <section style="background-color: rgba(160, 178, 190, 0.13);" class="menu-content">
@@ -73,12 +108,6 @@
   </main>
 
  <!-- Mevcut mobile-nav kısmını bununla değiştir -->
-<nav class="mobile-nav">
-  <div class="nav-item active" onclick="document.getElementById('categoryBar').scrollIntoView({behavior: 'smooth'})">
-    <div class="menu-icon-circle">🍴</div>
-    <p data-tr="MENÜ" data-en="MENU" data-ru="МЕНЮ">MENÜ</p>
-  </div>
-</nav>
   <script src="groften_new.js"></script>
 </body>
 </html>
